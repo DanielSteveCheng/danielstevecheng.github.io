@@ -10,12 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <script defer src="{{ url_for('static',filename='js/main.js')}}"></script>
     <title>Daniel Cheng</title>
 </head>
 <body>
-    
+<!-- 
     <nav>Navigation</nav>
 
     <div class="scroll_indicator">
@@ -24,6 +25,11 @@
         <a href="#experience" data-section="Experience"></a>
         <a href="#projects" data-section="Projects"></a>
         <a href="#facts" data-section="Fun Facts"></a>
+    </div> -->
+
+    <div id="background">
+        <img id="background1" src="{{ url_for('static', filename='imgs/sidething.png') }}" alt="">
+        <img id="background2" src="{{ url_for('static', filename='imgs/greendark.png') }}" alt="">
     </div>
 
     <div>
@@ -35,27 +41,26 @@
                         <h1>Daniel Cheng</h1>
                         <p>Hello! I'm Daniel, and I am a student highly interested in front-end development, machine learning, software development, and UI/UX design!</p>
                         <ul>
-                            <li><form action="{{resume}}">
-                                <input type="submit" value="Resume">
-                            </form></li>
+                            <li><a href="{{ url_for('static', filename='imgs/DanielChengResume.pdf')}}" target="_blank">Resume</a></li>
 
-                            <li><form action="{{git}}">
-                                <input type="submit" value="GitHub">
-                            </form></li>
+                            <li><a href="https://linkedin.com/in/dannycheng04" target="_blank">LinkedIn</a></li>
 
-                            <li><form action="{{linkedin}}">
-                                <input type="submit" value="LinkedIn">
-                            </form></li>
+                            <li><a href="https://github.com/DanielSteveCheng" target="_blank">GitHub</a></li>
                         </ul>
                         
                     </div>
                 </div>
 
                 <div id="right_side">
+                    <!-- <img src="{{ url_for('static', filename='imgs/green.png') }}" alt=""> -->
+                    <!-- <span class="dot"></span> -->
+
+                    <img id="daniel" src="{{ url_for('static', filename='imgs/Group 1.png') }}" alt="">
 
                 </div>
             <!-- </div> -->
         </section>
+        <!--
         <section id="about">
             <div id="info_area">
                 <ul class="gallery">
@@ -66,7 +71,6 @@
                             computer vision technology with drones and other autonomous equipment to
                             detect and collect marine debris.
                         </p>
-                        <!-- <img src="{{url_for('static',filename='images/trash1.png')}}" alt="Picture of the Great Pacific Garbage Patch from https://www.hydrotech-group.com/blog/it-is-so-big-that-you-can-see-it-on-maps-take-a-look-at-the-great-pacific-garbage-patch"> -->
                     </li>
                     <li id="outer">
                         <h3>33-Billion Pounds of Marine Debris</h3>
@@ -89,7 +93,6 @@
                     <li id="outer">
                         <h3>Computer Vision</h3>
                         <br>
-                        <!-- <img id="open" src="{{url_for('static',filename='images/opencv_logo.png')}}" alt="The OpenCV Logo accessed from https://opencv.org/media-kit/"> -->
                         <p> DeepClean utilizes OpenCV to scan a live video feed and return the location
                             of any trash detected. This location data will be processed by other autonomous
                             machines to find and clean debris. Together, our technology can automate the
@@ -115,7 +118,6 @@
                             <br><br>
                             Interests: Front end, Machine Learning, Violin, Singing, Graphic Design
                         </p>
-                        <!-- <img src="{{url_for('static',filename='images/Daniel.jpg')}}" alt="Picture of Daniel"> -->
                     </li>
                     <li id="outer">
                         <h3>Misael Ventura</h3>
@@ -123,7 +125,6 @@
                         <p>Hi,  my name is Misael Ventura. I am a sophomore at the University of Pittsburgh studying Computer Science. I love not only coding by physical activities such as weightlifting and running.</p>
                         <br>
                         <p></p>
-                        <!-- <img src="{{url_for('static',filename='images/mis.jpg')}}" alt="Picture of Mis"> -->
                     </li>
                     <li id="outer">
                         <h3>Nick Ferguson</h3>
@@ -131,13 +132,12 @@
                         <p> CS @ Pitt incoming msft swe intern who enjoys cs, hockey, and dog training
                         </p>
                         <p>Left early because of horrible Invisalign Pain</p>
-                        <!-- <img src="{{url_for('static',filename='images/nick.jpg')}}" alt="Picture of Nick"> -->
 
                     </li>
                     
                 </ul>
             </div>
-        </section>
+        </section> /-->
     </div>
     
     

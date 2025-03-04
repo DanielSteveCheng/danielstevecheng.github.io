@@ -13,17 +13,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* #daniel {
-    -webkit-mask-image: "{{ url_for('static', filename='imgs/green.png') }}";
-    mask-image: "{{ url_for('static', filename='imgs/green.png') }}";
-    mask-repeat: no-repeat;    
-} */
-
-/* Animations */
-/* @keyframes slide1 {
-    from {right: -10rem;}
-    to {right:0rem;}
-} */
 @keyframes slide1 {
     from {width: 0rem;}
     to {width:60rem;}
@@ -37,6 +26,16 @@ body {
 @keyframes slide3 {
     from {width: 0rem;}
     to {width:100rem;}
+}
+
+@keyframes slide4 {
+    from {width: 0rem;}
+    to {width:40rem;}
+}
+
+@keyframes slide5 {
+    from {width: 0rem;}
+    to {width:60rem;}
 }
 
 @keyframes fade {
@@ -78,6 +77,30 @@ body {
     }
     100% {
         width: 100rem;
+    }
+}
+
+@keyframes backnforth4 {
+    0% {
+        width: 40rem;
+    }
+    50% {
+        width: 39rem;
+    }
+    100% {
+        width: 40rem;
+    }
+}
+
+@keyframes backnforth5 {
+    0% {
+        width: 60rem;
+    }
+    50% {
+        width: 59rem;
+    }
+    100% {
+        width: 60rem;
     }
 }
 
@@ -239,6 +262,50 @@ h3,p {
     animation-delay: 0s, 2s;
 }
 
+#backgroundAbout {
+    position: absolute;
+    z-index: 0;
+    left: 0px;
+    /* height: 200vh; */
+    top: 150vh;
+}
+
+#background4 {
+    
+    position: absolute;
+    left:0rem;
+    z-index: 4;
+    height: 60vh;
+    width: 60rem;
+    top: 30vh;
+    /* animation-name: slide2;
+    animation-duration: 1.5s; */
+    /* animation-delay: 0.5s; */
+
+    animation: slide4, backnforth4;
+    animation-duration: 1s, 3s;
+    animation-iteration-count: 1, infinite;
+    animation-delay: 0s, 1s;
+}
+
+#background5 {
+    
+    position: absolute;
+    left:0rem;
+    z-index: 2;
+    height: 80vh;
+    width: 80rem;
+    top: 20vh;
+    /* animation-name: slide2;
+    animation-duration: 1.5s; */
+    /* animation-delay: 0.5s; */
+
+    animation: slide5, backnforth5;
+    animation-duration: 1.5s, 3s;
+    animation-iteration-count: 1, infinite;
+    animation-delay: 0s, 1.5s;
+}
+
 #daniel {
     /* margin-left: 3rem; */
     position: absolute;
@@ -259,36 +326,11 @@ h3,p {
     /* background-color: blue; */
 }
 
-
-
-/* #cv_container {
-    float: left;
-    width: 50%;
-    height: 100%;
-} */
-/* 
-#cv {
-    margin-top: 20%;
-    text-align: center;
-    width: 100%;
-} */
-
 #top_area::after{
     content: "";
     display: table;
     clear: both;
 }
-
-.noise {
-    position: absolute;
-    z-index: 10;
-    right: 0rem;
-    width: 400px;
-    height: 100px;
-    background: linear-gradient(to right, blue, rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
-}
-
-
 
 #info_section {
     text-align: center;
@@ -297,13 +339,6 @@ h3,p {
     height: 100%;
     /* padding: 20px; */
 }
-
-    /* #info_right {
-        width: 100%;
-        background-color: rgba(0,0,0, 0.5);
-        height: 100%;
-        float: right;
-    } */
 
 html {
     scroll-snap-type: y mandatory;
@@ -317,6 +352,7 @@ nav{
 section{
     height: 100vh;
     scroll-snap-align: start;
+    z-index: 1;
 }
 
 .scroll_indicator{
@@ -413,6 +449,11 @@ section{
     background-color: rgba(0,0,0, 0.5);
 }
 
+#experience {
+    position: relative;
+    z-index: 1;
+}
+
 #experiences {
     margin: 0vh 10rem 5vh 10rem;
 }
@@ -421,11 +462,14 @@ section{
     font-family: "Bebas Neue", serif;
   font-weight: 400;
   font-style: normal; 
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 10vh;
     padding-top: 50px;
     padding-left: 0rem;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+
     /* margin: 10vh 0   rem 0vh 0rem; */
+    
 }
 
 #experienceP {
@@ -437,6 +481,8 @@ section{
     margin-top: -9vh;
     padding-left: 0rem;
     margin-bottom: 6vh;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+
 }
 
 #experiences ul {

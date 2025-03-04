@@ -263,11 +263,11 @@ h3,p {
 }
 
 #backgroundAbout {
-    position: absolute;
+    position: relative;
     z-index: 0;
-    left: 0px;
+    float: left;
     /* height: 200vh; */
-    top: 150vh;
+/*     top: 150vh; */
 }
 
 #background4 {

@@ -18,6 +18,8 @@ body {
     background-repeat: space;
     background-position: center center;
     background-attachment: fixed;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 /* #daniel {
@@ -27,14 +29,23 @@ body {
 } */
 
 /* Animations */
-@keyframes slide1 {
+/* @keyframes slide1 {
     from {right: -10rem;}
     to {right:0rem;}
+} */
+@keyframes slide1 {
+    from {width: 0rem;}
+    to {width:60rem;}
 }
 
 @keyframes slide2 {
-    from {right: -40rem;}
-    to {right:7rem;}
+    from {width: 0rem;}
+    to {width:80rem;}
+}
+
+@keyframes slide3 {
+    from {width: 0rem;}
+    to {width:100rem;}
 }
 
 @keyframes fade {
@@ -42,34 +53,43 @@ body {
     to {opacity: 100%;}
 }
 
-@keyframes bigger {
-    from {height: 100%;}
-    to {height: 110%;}
-}
 
 @keyframes backnforth1 {
     0% {
-        right: 0rem;
+        width: 60rem;
     }
     50% {
-        right: -3rem;
+        width: 59rem;
     }
     100% {
-        right: 0rem;
+        width: 60rem;
     }
 }
 
 @keyframes backnforth2 {
     0% {
-        right: 7rem;
+        width: 80rem;
     }
     50% {
-        right: 4rem;
+        width: 79rem;
     }
     100% {
-        right: 7rem;
+        width: 80rem;
     }
 }
+
+@keyframes backnforth3 {
+    0% {
+        width: 100rem;
+    }
+    50% {
+        width: 99rem;
+    }
+    100% {
+        width: 100rem;
+    }
+}
+
 
 #side_area {
     animation-name: fade;
@@ -77,21 +97,31 @@ body {
 }
 
 #title {
-    font-size: 9.5vh;
+    font-size: 18vh;
     /* margin-top: auto; */
-    margin-left: 4rem;
-    margin-top: 11rem;
+    /* margin-left: 4rem; */
+    margin-top: 0vh;
     /* padding-bottom: -10rem; */
     position: absolute;
     z-index: 1;
 }
 
 #title h1 {
-    text-shadow: 8px 8px rgba(0, 0, 0, 0.5);
-    margin-left: -0.5rem;
+    max-width: 10rem;
+    text-shadow: 8px 8px rgba(12, 37, 0, 0.5);
+    margin-left: 10rem;
+    margin-top: 16vh;
+    margin-bottom: 0vh;
+    /* font-family: "Manrope", serif;  */
+    font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal; 
+    color: white;
+    line-height: 0.9;
+    letter-spacing: 15px
 }
 
-h1,h3,p {
+h3,p {
     color: white;
     opacity: 100%;
     font-family: "Manrope", serif; 
@@ -99,23 +129,26 @@ h1,h3,p {
 }
 
 #title p {
-    margin-top: -10vh;
-    font-size: 3vh;
+    margin-top: 0vh;
+    font-size: 2.5vh;
     max-width: 40rem;
-    margin-left: 0rem;
+    margin-left: 10rem;
+    margin-bottom: 0vh;
     /* margin-bottom: 4vh; */
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 
 }
 
 #title ul {
-    margin-top: -10px;
+    /* margin-top: -10px; */
+    margin-top: -7vh;
     padding-left: 0;
+    margin-left: 10rem;
 }
 
 #title li {
     list-style-type: none;
-    margin-right: 10px;
+    margin-right: 30px;
     float: left;
 }
 
@@ -169,32 +202,25 @@ h1,h3,p {
 }
 
 #background1 {
-    /* float: right;
-    position: relative;
-    z-index: 9;
-    /* animation-name: slide1; */
-    /* animation-duration: 1s;  */
     position: absolute;
     right:0rem;
-    /* height: 90%; */
     height: 100vh;
-    z-index: 1;
+    width: 60rem;
+    z-index: 3;
     animation: slide1, backnforth1;
     animation-duration: 1s, 3s;
     animation-iteration-count: 1, infinite;
     animation-delay: 0s, 1s;
-
-    /* animation-name: backnforth1;
-    animation-duration: 1s;
-    animation-iteration-count: infinite; */
 }
 
 #background2 {
     
     position: absolute;
-    right:7rem;
-    z-index: 0;
-    height: 100vh;
+    right:0rem;
+    z-index: 2;
+    height: 110vh;
+    width: 80rem;
+
     /* animation-name: slide2;
     animation-duration: 1.5s; */
     /* animation-delay: 0.5s; */
@@ -203,6 +229,34 @@ h1,h3,p {
     animation-duration: 1.5s, 3s;
     animation-iteration-count: 1, infinite;
     animation-delay: 0s, 1.5s;
+}
+
+#background3 {
+    
+    position: absolute;
+    right:0rem;
+    z-index: 1;
+    height: 120vh;
+    width: 100rem;
+    /* animation-name: slide2;
+    animation-duration: 1.5s; */
+    /* animation-delay: 0.5s; */
+
+    animation: slide3, backnforth3;
+    animation-duration: 2s, 3s;
+    animation-iteration-count: 1, infinite;
+    animation-delay: 0s, 2s;
+}
+
+#daniel {
+    /* margin-left: 3rem; */
+    position: absolute;
+    z-index: 4;
+    right: 3rem;
+    margin-top: 12vh;
+    height: 80vh;
+    animation-name: fade; 
+    animation-duration: 1s;
 }
 
 #right_side {
@@ -214,15 +268,7 @@ h1,h3,p {
     /* background-color: blue; */
 }
 
-#daniel {
-    margin-left: 3rem;
-    position: absolute;
-    z-index: 1;
-    margin-top: 10vh;
-    height: 80vh;
-    /* animation-name: bigger; */
-    /* animation-duration: 1s; */
-}
+
 
 /* #cv_container {
     float: left;
@@ -240,6 +286,15 @@ h1,h3,p {
     content: "";
     display: table;
     clear: both;
+}
+
+.noise {
+    position: absolute;
+    z-index: 10;
+    right: 0rem;
+    width: 400px;
+    height: 100px;
+    background: linear-gradient(to right, blue, rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
 }
 
 
@@ -261,7 +316,7 @@ h1,h3,p {
 
 html {
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 nav{
@@ -269,13 +324,14 @@ nav{
 }
 
 section{
-    height:100vh;
+    height: 100vh;
     scroll-snap-align: start;
 }
 
 .scroll_indicator{
     position: fixed;
-    right: 100px;
+    /* right: 0px; */
+    left: 4.5rem;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -293,35 +349,46 @@ section{
 .scroll_indicator a::after {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background-color: rgb(10, 64, 0);
+    background-color: rgb(255, 255, 255);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    z-index: 0;
+
+    text-align: center;
+    font-family: "Manrope", serif;
+    font-weight: "bold";
+    color: rgba(0, 0, 0, 0);
     transition: all 400ms ease;
+
 }
 
 .scroll_indicator a.active::after{
-    background: rgb(255, 255, 255);
+    background: rgb(255, 223, 43);
     transform: translate(-50%,-50%) scale(1.3);
 }
 
 .scroll_indicator a::before {
-    content: attr(data-section);
+    z-index: 10;
+    /* content: attr(data-section); */
     position: absolute;
-    right: 24px;
+    /* text-align: center; */
+    /* left: -10rem; */
     top: 50%;
-    transform: translate(4px, -50%);
-    /* background: black; */
+    transform: translate(0px, -50%);
+    /* background: rgb(19, 44, 0); */
     /* background: linear-gradient(0.25turn, #000, (gold)); */
-    color: rgb(0, 31, 0);
-    font-family: "Manrope", serif; 
+    /* color: rgb(0, 0, 0); */
+    /* text-align: center;
+    font-family: "Manrope", serif;
     font-weight: "bold";
+    color: black; */
     padding: 2px 16px;
     text-transform: uppercase;
-    border-radius: 10%;
+    /* border-radius: 10%; */
     opacity: 0;
     transition: all 400ms ease;
 }
@@ -334,8 +401,17 @@ section{
 
 .scroll_indicator a:hover::after {
     height: 20px;
-    width: 20px;
+    width: 500%;
+    border-radius: 5%;
+    text-align: center;
+    font-family: "Manrope", serif;
+    font-weight: "bold";
+    color: black;
+
+    padding: 5px 0px;
+    
     transition: all 400ms ease;
+    content: attr(data-section);
 }
 
 /* Testing */

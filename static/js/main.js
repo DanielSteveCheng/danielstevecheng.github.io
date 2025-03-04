@@ -33,13 +33,13 @@ sections.forEach(section => {
 
 // for horizontal scroll
 
-const init = function(){
-  let items = document.querySelectorAll('.gallery li');
-  for (let i = 0; i < items.length; i++){
-    items[i].style.minWidth = gra(30,60) + 'vw';
-    items[i].style.background = randomColor({luminosity: 'light'});
-  }
-  cssScrollSnapPolyfill()
-}
-init();
+// const init = function(){
+//   let items = document.querySelectorAll('.gallery li');
+//   for (let i = 0; i < items.length; i++){
+//     items[i].style.minWidth = gra(30,60) + 'vw';
+//     items[i].style.background = randomColor({luminosity: 'light'});
+//   }
+//   cssScrollSnapPolyfill()
+// }
+// init();
 

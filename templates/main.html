@@ -5,10 +5,13 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Bebas+Neue&family=Funnel+Display:wght@300..800&family=Manrope:wght@200..800&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">   
+
+<!-- Other Fonts -->
     
     
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
@@ -16,7 +19,7 @@
     <title>Daniel Cheng</title>
 </head>
 <body>
-<!-- 
+
     <nav>Navigation</nav>
 
     <div class="scroll_indicator">
@@ -25,11 +28,17 @@
         <a href="#experience" data-section="Experience"></a>
         <a href="#projects" data-section="Projects"></a>
         <a href="#facts" data-section="Fun Facts"></a>
-    </div> -->
+    </div>
 
     <div id="background">
-        <img id="background1" src="{{ url_for('static', filename='imgs/sidething.png') }}" alt="">
-        <img id="background2" src="{{ url_for('static', filename='imgs/greendark.png') }}" alt="">
+        
+        <img id="background1" src="{{ url_for('static', filename='imgs/Rectangle 1.png') }}" alt="">
+        <img id="background2" src="{{ url_for('static', filename='imgs/Rectangle 2.png') }}" alt="">
+        <img id="background3" src="{{ url_for('static', filename='imgs/Rectangle 3.png') }}" alt="">
+        <img id="daniel" src="{{ url_for('static', filename='imgs/Group 1.png') }}" alt="">
+        <!-- <div id="bar"></div> -->
+        <!-- <div class="noise"></div> -->
+
     </div>
 
     <div>
@@ -39,7 +48,7 @@
                     <div id="title">
 
                         <h1>Daniel Cheng</h1>
-                        <p>Hello! I'm Daniel, and I am a student highly interested in front-end development, machine learning, software development, and UI/UX design!</p>
+                        <p>Hello! I'm Daniel, and I am a student highly interested in front-end, ML, SWE, and UI/UX design!</p>
                         <ul>
                             <li><a href="{{ url_for('static', filename='imgs/DanielChengResume.pdf')}}" target="_blank">Resume</a></li>
 
@@ -55,15 +64,14 @@
                     <!-- <img src="{{ url_for('static', filename='imgs/green.png') }}" alt=""> -->
                     <!-- <span class="dot"></span> -->
 
-                    <img id="daniel" src="{{ url_for('static', filename='imgs/Group 1.png') }}" alt="">
 
                 </div>
             <!-- </div> -->
         </section>
-        <!--
+        
         <section id="about">
             <div id="info_area">
-                <ul class="gallery">
+                <!-- <ul class="gallery">
                     <li id="outer">
                         <h3>Our Mission</h3>
                         <br><br><br>
@@ -101,14 +109,14 @@
                         
                     </li>
                     
-                </ul>
+                </ul> -->
             </div>
             
                 
         </section>
         <section id="experience">
             <div id="about_us">
-                <ul class="gallery">
+                <!-- <ul class="gallery">
                     <li id="outer">
                         <h3>Daniel Cheng</h3>
                         <p>______________</p>
@@ -135,9 +143,9 @@
 
                     </li>
                     
-                </ul>
+                </ul> -->
             </div>
-        </section> /-->
+        </section> 
     </div>
     
     

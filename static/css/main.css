@@ -457,6 +457,7 @@ section{
 
 #experiences {
     margin: 0vh 10rem 5vh 10rem;
+    
 }
 
 #experiences h1 {
@@ -491,7 +492,7 @@ section{
     padding: 0;
     list-style-type: none;
     display: flex;
-    overflow-x: auto;
+    overflow-x:auto;
     /* overflow-x: scroll; */
     scroll-padding: 0 50%;
     scroll-snap-type: x mandatory;
@@ -728,8 +729,10 @@ section{
     /* background: white;   */
     width: 50%;  
     text-align: justify;
-    padding-left: 10rem;
-    padding-right: 5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    background-color: rgba(8, 28, 0, 0.514);
+    border-radius: 50px;
 }
 
 #about_right h1 {
@@ -738,7 +741,7 @@ section{
   font-style: normal; 
     color: rgb(255, 255, 255);
     font-size: 10vh;
-    padding-left: 0rem;
+    padding-left: 6rem;
     margin-bottom: 0vh;
     text-shadow: 4px 4px rgba(0, 0, 0, 0.3);
 
@@ -751,9 +754,32 @@ section{
   font-style: normal; 
     color: rgb(255, 255, 255);
     font-size: 5vh;
-    padding-left: 0rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+
 }
 
 #about_right p {
-    font-size: 3vh;
+    font-size: 2.5vh;
+    text-align: left;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(42, 75, 24);
+    text-align: center;
+}
+
+footer p {
+    font-family: "Manrope", serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: white;
+    padding-top: 5vh;
+    font-size: 5vh;
+    transition: all 400ms ease;
+    height: 5vh;
 }

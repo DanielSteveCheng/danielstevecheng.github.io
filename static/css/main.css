@@ -694,7 +694,7 @@ section{
     position: absolute;
     margin-top: 10vh;
     margin-left: 10rem;
-    width: 53vh;
+    width: 1vh;
     height: 10vh;
     animation-name: a1;
     animation-duration: 7s;
@@ -705,7 +705,7 @@ section{
     position: absolute;
     margin-top: 15vh;
     margin-left: 13.5rem;
-    width: 53vh;
+    width: 1vh;
     height: 10vh;
     animation-name: a2;
     animation-duration: 7s;
@@ -716,7 +716,7 @@ section{
     position: absolute;
     margin-top: 20vh;
     margin-left: 17rem;
-    width: 53vh;
+    width: 1vh;
     height: 10vh;
     animation-name: a3;
     animation-duration: 7s;

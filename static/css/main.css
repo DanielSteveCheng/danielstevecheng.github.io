@@ -783,3 +783,126 @@ footer p {
     transition: all 400ms ease;
     height: 5vh;
 }
+
+/* Horizontal Scroll Bar */
+
+div.scrollmenu {
+    /* background-color: #333; */
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: 5vh;
+    /* overflow-x: auto; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    scroll-behavior: x smooth;
+  }
+  .scrollmenu::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .exp {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    width: 30rem;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: rgb(9, 26, 0);
+    /* margin-left: 2rem; */
+    margin-right: 2rem;
+    margin-top: 6vh;
+    transition: all 400ms ease;
+  }
+
+  .exp h1 {
+    text-align: center;
+    transition: all 400ms ease;
+  }
+
+  .exp:hover h1 {
+    
+    transition: all 400ms ease;
+    /* text-align: left;
+    margin-left: rem; */
+    margin-top: -1vh;
+  }
+
+  .exp:hover {
+    margin-top: 0vh;
+    /* text-align: left; */
+
+    /* margin-bottom: 5vh; */
+    width: 35rem;
+    height: 60vh;
+    size: 10vh;
+    /* font-size: 3vh; */
+
+  }
+
+  
+
+  .exp p {
+    font-size: 0vh;
+    text-align: left;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: -7vh;
+    white-space: normal;
+    /* padding-bottom: 0vh; */
+    /* inline-size: 150px;
+    overflow-wrap: break-word; */
+    /* inline-size: 10rem; */
+    transition: all 400ms ease;
+
+  }
+
+  .exp:hover p {
+    font-size: 2vh;
+  }
+
+  .exp img {
+    width: 4rem;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+
+#slideLeft {
+    border: none;
+    top: 27vh;
+    left: 10rem;
+    position: absolute;
+    padding: 10px 50px 10px 50px;
+    color: white;
+    
+    background-color: rgb(56, 106, 3);
+    border-radius: 20px;
+}
+
+#slideLeft p {
+    text-align: center;
+    font-size: 2vh;
+}
+#slideRight {
+    border: none;
+    top: 27vh;
+    right: 10rem;
+    position: absolute;
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(56, 106, 3);
+    color: white;
+
+    border-radius: 20px;
+}
+
+#buttons button {
+    transition: all 400ms ease;
+}
+
+#buttons button:hover {
+    padding: 15px 55px 15px 55px;
+}
+
+
+  

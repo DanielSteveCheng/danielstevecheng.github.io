@@ -17,7 +17,7 @@ async function setup() {
 }
 
 async function readExperiences() {
-    return await fetch("./resources/experiences.txt")
+    return await fetch(".static/resources/experiences.txt")
         .then(response => {
             return response.text();
         })

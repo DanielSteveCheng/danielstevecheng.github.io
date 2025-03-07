@@ -9,3 +9,11 @@ description:This coming summer of 2025, I will be working as a technology intern
 name:STIW Lab
 image:
 description:Starting in Spring of 2024, I worked with the STIW Lab led by Dr. Aakash Gautam, where we focus on dealing with issues of power inequity.<br><br>Accomplishments<br> • Co-designing learning plans focused on data literacy for middle school children with company No Code AI<br>• Co-authoring research publication on teaching structures to instruct children in data-literacy skills
+
+name:SteelHacks
+image:
+description: This year, I have been excited to take on the role of Executive Director of SteelHacks, Pitt's largest annual hackathon. Currently, I am leading a team of 30+ members to host our event in Fall of 2025, and I am extremely hopeful for what we can bring to our event. <br><br> Last year, I was the Director of Outreach for SteelHacks, where I drew in over 600+ applications from 81 different universities.
+
+name:Pitt Orchestra <br> Concertmaster
+image:
+description:Since my freshman year, I have played as the first chair of the first violins in the University of Pittsburgh Symphony Orchestra. This experience has taught me a great deal in leading a group and setting a good example, as the concertmaster role is vital for holding together the first violin section.

@@ -120,12 +120,12 @@ function populateExp() {
 
 function populateLeft(experience) {
     let leftTitle = document.getElementById("left_h1");
-    leftTitle.innerHTML = experience.name + "<br> <";
+    leftTitle.innerHTML = experience.name + "<br>" + `<img src='./static/imgs/left.png' alt=''>`;
 }
 
 function populateRight(experience) {
     let rightTitle = document.getElementById("right_h1");
-    rightTitle.innerHTML = experience.name + "<br> >";
+    rightTitle.innerHTML = experience.name + "<br>" + `<img src='./static/imgs/right.png' alt=''>`;
 }
 
 function populateMiddle(experience) {

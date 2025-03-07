@@ -200,15 +200,15 @@ function removeExp(experience) {
     // desc.innerHTML = "";
 }
 
-const buttonRight = document.getElementById('slideRight');
-const buttonLeft = document.getElementById('slideLeft');
+// const buttonRight = document.getElementById('slideRight');
+// const buttonLeft = document.getElementById('slideLeft');
 
-buttonRight.onclick = function () {
-    rotateToRight();
-};
-buttonLeft.onclick = function () {
-    rotateToLeft();
-};
+// buttonRight.onclick = function () {
+//     rotateToRight();
+// };
+// buttonLeft.onclick = function () {
+//     rotateToLeft();
+// };
 
 
 // For nav dots

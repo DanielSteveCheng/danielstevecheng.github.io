@@ -14,28 +14,28 @@ body {
 }
 
 @keyframes slide1 {
-    from {width: 0rem;}
-    to {width:60rem;}
+    from {width: 0vw;}
+    to {width:55vw;}
 }
 
 @keyframes slide2 {
-    from {width: 0rem;}
-    to {width:80rem;}
+    from {width: 0vw;}
+    to {width:75vw;}
 }
 
 @keyframes slide3 {
-    from {width: 0rem;}
-    to {width:100rem;}
+    from {width: 0vw;}
+    to {width:95vw;}
 }
 
 @keyframes slide4 {
     from {width: 0rem;}
-    to {width:40rem;}
+    to {width:35vw;}
 }
 
 @keyframes slide5 {
-    from {width: 0rem;}
-    to {width:60rem;}
+    from {width: 0vw;}
+    to {width:55vw;}
 }
 
 @keyframes fade {
@@ -46,61 +46,61 @@ body {
 
 @keyframes backnforth1 {
     0% {
-        width: 60rem;
+        width: 55vw;
     }
     50% {
-        width: 59rem;
+        width: 54vw;
     }
     100% {
-        width: 60rem;
+        width: 55vw;
     }
 }
 
 @keyframes backnforth2 {
     0% {
-        width: 80rem;
+        width: 75vw;
     }
     50% {
-        width: 79rem;
+        width: 74vw;
     }
     100% {
-        width: 80rem;
+        width: 75vw;
     }
 }
 
 @keyframes backnforth3 {
     0% {
-        width: 100rem;
+        width: 95vw;
     }
     50% {
-        width: 99rem;
+        width: 94vw;
     }
     100% {
-        width: 100rem;
+        width: 95vw;
     }
 }
 
 @keyframes backnforth4 {
     0% {
-        width: 40rem;
+        width: 35vw;
     }
     50% {
-        width: 39rem;
+        width: 34vw;
     }
     100% {
-        width: 40rem;
+        width: 35vw;
     }
 }
 
 @keyframes backnforth5 {
     0% {
-        width: 60rem;
+        width: 55vw;
     }
     50% {
-        width: 59rem;
+        width: 54vw;
     }
     100% {
-        width: 60rem;
+        width: 55vw;
     }
 }
 
@@ -111,11 +111,8 @@ body {
 }
 
 #title {
-    font-size: 18vh;
-    /* margin-top: auto; */
-    /* margin-left: 4rem; */
+    font-size: 10vw;
     margin-top: 0vh;
-    /* padding-bottom: -10rem; */
     position: absolute;
     z-index: 1;
 }
@@ -123,7 +120,7 @@ body {
 #title h1 {
     max-width: 10rem;
     text-shadow: 8px 8px rgba(12, 37, 0, 0.5);
-    margin-left: 10rem;
+    margin-left: 9vw;
     margin-top: 16vh;
     margin-bottom: 0vh;
     /* font-family: "Manrope", serif;  */
@@ -144,9 +141,9 @@ h3, p{
 
 #title p {
     margin-top: 0vh;
-    font-size: 2.5vh;
-    max-width: 40rem;
-    margin-left: 10rem;
+    font-size: 1.4vw;
+    max-width: 35vw;
+    margin-left: 9.5vw;
     margin-bottom: 0vh;
     /* margin-bottom: 4vh; */
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
@@ -157,12 +154,12 @@ h3, p{
     /* margin-top: -10px; */
     margin-top: -7vh;
     padding-left: 0;
-    margin-left: 10rem;
+    margin-left: 9.5vw;
 }
 
 #title li {
     list-style-type: none;
-    margin-right: 30px;
+    margin-right: 2vw;
     float: left;
 }
 
@@ -173,12 +170,12 @@ h3, p{
     border-color: white;
     border-radius: 10px;
     color: white;
-    padding: 20px 40px;
+    padding: 1.2vw 2.3vw;
     text-decoration: none;
     /* margin: 4px 2px; */
     cursor: pointer;
     font-family: "Manrope", serif; 
-    font-size: 25px;
+    font-size: 1.5vw;
     transition: all 400ms ease;
 
     /* float: left; */
@@ -277,7 +274,7 @@ h3, p{
     left:0rem;
     z-index: 4;
     height: 40vh;
-    width: 60rem;
+    width: 35vw;
     top: 40vh;
     /* animation-name: slide2;
     animation-duration: 1.5s; */
@@ -295,7 +292,7 @@ h3, p{
     left:0rem;
     z-index: 2;
     height: 60vh;
-    width: 80rem;
+    width: 55vw;
     top: 30vh;
     /* animation-name: slide2;
     animation-duration: 1.5s; */
@@ -313,7 +310,7 @@ h3, p{
     z-index: 4;
     right: 3rem;
     margin-top: 12vh;
-    height: 80vh;
+    width: 43vw;
     animation-name: fade; 
     animation-duration: 1s;
 }
@@ -359,7 +356,7 @@ section{
 .scroll_indicator{
     position: fixed;
     /* right: 0px; */
-    left: 4.5rem;
+    left: 4vw;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -391,7 +388,6 @@ section{
     font-weight: "bold";
     color: rgba(0, 0, 0, 0);
     transition: all 400ms ease;
-
 }
 
 .scroll_indicator a.active::after{
@@ -456,7 +452,8 @@ section{
 }
 
 #experiences {
-    margin: 0vh 10rem 5vh 10rem;
+    margin: 0vh 0rem 5vh 0rem;
+    margin-left: 10.5vw;
     
 }
 
@@ -470,114 +467,9 @@ section{
     padding-left: 0rem;
     text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
     margin: 0;
+    
     /* margin: 10vh 0   rem 0vh 0rem; */
     
-}
-
-#experienceP {
-    font-family: "Manrope", serif;
-  font-weight: 400;
-  font-style: normal; 
-    color: white;
-    font-size: 3vh;
-    margin-top: -9vh;
-    padding-left: 0rem;
-    margin-bottom: 6vh;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-
-}
-
-#experiences ul {
-    /* border: 1px solid lightgray; */
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    overflow-x:auto;
-    /* overflow-x: scroll; */
-    scroll-padding: 0 50%;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth !important;
-    scroll-snap-align: center;
-}
-
-.gallery {
-    margin-top: -5vh;
-    margin-left: -1rem;
-    height: 70vh;
-}
-  
-.gallery a {
-    /* margin-top: 8rem; */
-    padding: 10vh;
-    background-color: rgba(24, 24, 24, 0.7);
-    scroll-snap-align: center;
-    display: inline-block;
-    height: 15vh;
-    width: 20rem;
-
-    border-radius: 25px;
-    /* margin-right: 3rem; */
-    
-    transition: all 400ms ease;
-    text-decoration: none;
-    /* list-style-type: none; */
-    margin: 9rem 1rem 0rem 1rem;
-    /* opacity: 50%; */
-    font-size: 0vh;
-  }
-
-  .outerEl {
-    margin-left: -2.5rem;
-  }
-
-  .outer:hover{
-    opacity: 100%;
-    /* position: absolute; */
-    margin: 0vh 2rem 0rem 2rem;
-    margin-top: 1rem;
-    width: 100rem;
-    height: 40vh;
-    font-size: 2vh;
-    padding-right: 3rem;
-
-    
-  }
-
-  /* .outer li:hover:after {
-
-  } */
-
-  #inner{
-    list-style-type: none;
-  }
-
-  #inner li{
-    float: left;
-    display: inline;
-  }
-
-  .gallery p{
-    float: left;
-    width: 100%;
-  }
-
-  .gallery h3{
-    font-size: 50px;
-    width: 500px;
-    margin-bottom: -3px;
-    margin-top: 0px;
-  }
-
-#outer img{
-    border-radius: 10px;
-    height: 60%;
-    text-align: center;
-    display: block;
-    margin: 20px auto 0 auto;
-  }
-
-.gallery::-webkit-scrollbar {
-    display: none;
 }
 
 /* About Section */
@@ -731,7 +623,7 @@ section{
     text-align: justify;
     padding-left: 0rem;
     padding-right: 0rem;
-    background-color: rgba(8, 28, 0, 0.514);
+    /* background-color: rgba(8, 28, 0, 0.514); */
     border-radius: 50px;
 }
 
@@ -742,6 +634,7 @@ section{
     color: rgb(255, 255, 255);
     font-size: 10vh;
     padding-left: 6rem;
+    margin-top: 23vh;
     margin-bottom: 0vh;
     text-shadow: 4px 4px rgba(0, 0, 0, 0.3);
 
@@ -788,6 +681,7 @@ footer p {
 
 div.scrollmenu {
     /* background-color: #333; */
+    margin-top: 4vh;
     overflow: auto;
     white-space: nowrap;
     /* padding-bottom: 5vh; */
@@ -879,51 +773,11 @@ div.scrollmenu {
     background-color: #777;
   } */
 
-#slideLeft {
-    border: none;
-    top: 27vh;
-    left: 10rem;
-    position: absolute;
-    padding: 5vh 5vh 5vh 5vh;
-    color: white;
-    
-    background-color: rgb(56, 106, 3);
-    border-radius: 100%;
-    z-index: 10;
-}
-
-#slideLeft p {
-    text-align: center;
-    font-size: 2vh;
-    /* font-weight:bolder; */
-    /* font-size: 100px; */
-}
-#slideRight {
-    border: none;
-    top: 27vh;
-    right: 10rem;
-    position: absolute;
-    padding: 5vh 5vh 5vh 5vh;
-    background-color: rgb(56, 106, 3);
-    color: white;
-
-    border-radius: 100%;
-    z-index: 10;
-}
-
-#buttons button {
-    transition: all 400ms ease;
-}
-
-#buttons button:hover {
-    padding: 5.5vh;
-}
-
 #middle {
     width: 37.7vw;
     height: 75vh;
     position: absolute;
-    left: 29.6vw;
+    left: 30.2vw;
     margin-top: -4vh;
     font-size: 8vh;
 
@@ -932,7 +786,7 @@ div.scrollmenu {
 #middle:hover {
     height:76vh;
     width:38vw;
-    left: 29.5vw;
+    left: 30.1vw;
     margin-top: -4.5vh;
 }
 
@@ -954,11 +808,11 @@ div.scrollmenu {
 }
 
 #right {
-    left: 68vw;
+    left: 69vw;
 }
 
 #right:hover {
-    left: 68.5vw;
+    left: 69.5vw;
 }
 
 #left:hover, #right:hover {

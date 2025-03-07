@@ -135,9 +135,9 @@ body {
     letter-spacing: 15px
 }
 
-h3,p {
+h3, p{
     color: white;
-    opacity: 100%;
+    /* opacity: 100%; */
     font-family: "Manrope", serif; 
     /* font-family: "Alumni Sans Pinstripe", serif; */
 }
@@ -460,16 +460,16 @@ section{
     
 }
 
-#experiences h1 {
+#expTitle h1 {
     font-family: "Bebas Neue", serif;
   font-weight: 400;
   font-style: normal; 
     color: rgb(255, 255, 255);
     font-size: 10vh;
-    padding-top: 50px;
+    padding-top: 5vh;
     padding-left: 0rem;
     text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
-
+    margin: 0;
     /* margin: 10vh 0   rem 0vh 0rem; */
     
 }
@@ -790,10 +790,10 @@ div.scrollmenu {
     /* background-color: #333; */
     overflow: auto;
     white-space: nowrap;
-    padding-bottom: 5vh;
+    /* padding-bottom: 5vh; */
     /* overflow-x: auto; */
-    /* display: flex; */
-    /* flex-direction: row; */
+    display: flex;
+    flex-direction: row;
     scroll-behavior: x smooth;
   }
   .scrollmenu::-webkit-scrollbar {
@@ -801,99 +801,114 @@ div.scrollmenu {
   }
   
   .exp {
-    display: inline-block;
-    text-align: center;
-    padding: 14px;
-    width: 30rem;
-    height: 40vh;
+    /* display: inline-block; */
+    float: left;
+    /* text-align: center; */
+    /* padding: 14px; */
+    /* width: 30rem;
+    height: 40vh; */
     border-radius: 10px;
     background-color: rgb(9, 26, 0);
-    /* margin-left: 2rem; */
-    margin-right: 2rem;
-    margin-top: 6vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* margin-top: 1vh; */
     transition: all 400ms ease;
+    /* position: relative; */
+    
   }
 
   .exp h1 {
-    text-align: center;
-    transition: all 400ms ease;
-  }
 
-  .exp:hover h1 {
+    padding-top: 10vh;
+    /* margin-top: 100px; */
+    /* color: white; */
+    text-align: center;
     
     transition: all 400ms ease;
-    /* text-align: left;
-    margin-left: rem; */
-    margin-top: -1vh;
-  }
 
-  .exp:hover {
-    margin-top: 0vh;
-    /* text-align: left; */
+    /* transition: all 400ms ease; */
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: rgb(255, 255, 255);
+    /* font-size: 9vh; */
+    margin:0;
+    position: relative;
 
-    /* margin-bottom: 5vh; */
-    width: 35rem;
-    height: 60vh;
-    size: 10vh;
-    /* font-size: 3vh; */
+
 
   }
 
+  /* .exp:hover h1 { */
+    /* padding-top: 5vh; */
+    /* margins: 0; */
+    /* padding: 0; */
+    /* padding-top: 0; */
+
+  /* } */
+
+ 
   
 
   .exp p {
-    font-size: 0vh;
     text-align: left;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: -7vh;
-    white-space: normal;
-    /* padding-bottom: 0vh; */
-    /* inline-size: 150px;
-    overflow-wrap: break-word; */
-    /* inline-size: 10rem; */
+    text-wrap: auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 2.3vh;
     transition: all 400ms ease;
+    opacity: 1;
+    position: relative;
 
   }
 
   .exp:hover p {
-    font-size: 2vh;
+    /* font-size: 2vh; */
+    opacity: 1;
   }
 
   .exp img {
-    width: 4rem;
+    margin-top: 2.5vh;
+    /* margin-left: 0.5rem; */
+    /* width: 4rem; */
+    height: 7vh;
+    position: relative;
   }
   
-  div.scrollmenu a:hover {
+  /* div.scrollmenu a:hover {
     background-color: #777;
-  }
+  } */
 
 #slideLeft {
     border: none;
     top: 27vh;
     left: 10rem;
     position: absolute;
-    padding: 10px 50px 10px 50px;
+    padding: 5vh 5vh 5vh 5vh;
     color: white;
     
     background-color: rgb(56, 106, 3);
-    border-radius: 20px;
+    border-radius: 100%;
+    z-index: 10;
 }
 
 #slideLeft p {
     text-align: center;
     font-size: 2vh;
+    /* font-weight:bolder; */
+    /* font-size: 100px; */
 }
 #slideRight {
     border: none;
     top: 27vh;
     right: 10rem;
     position: absolute;
-    padding: 10px 50px 10px 50px;
+    padding: 5vh 5vh 5vh 5vh;
     background-color: rgb(56, 106, 3);
     color: white;
 
-    border-radius: 20px;
+    border-radius: 100%;
+    z-index: 10;
 }
 
 #buttons button {
@@ -901,8 +916,65 @@ div.scrollmenu {
 }
 
 #buttons button:hover {
-    padding: 15px 55px 15px 55px;
+    padding: 5.5vh;
+}
+
+#middle {
+    width: 37.7vw;
+    height: 75vh;
+    position: absolute;
+    left: 29.6vw;
+    margin-top: -4vh;
+    font-size: 8vh;
+
+}
+
+#middle:hover {
+    height:76vh;
+    width:38vw;
+    left: 29.5vw;
+    margin-top: -4.5vh;
 }
 
 
-  
+#left, #right {
+    margin-top: 13vh;
+    width: 19vw;
+    height: 40vh;
+    position: absolute;
+    font-size: 4vh;
+    opacity: 0.8;
+}
+
+#left {
+    left: 10vw;
+}
+#left:hover {
+    left: 9.5vw;
+}
+
+#right {
+    left: 68vw;
+}
+
+#right:hover {
+    left: 68.5vw;
+}
+
+#left:hover, #right:hover {
+    margin-top: 12.5vh;
+    /* width: 21rem; */
+    height: 41vh;
+    opacity: 1;
+}
+
+#middle img {
+    margin-left: 1vw;
+    height: 8vh;
+    margin-right: -0.5vw;
+}
+
+/* @keyframes middle_to_left {
+    from{}
+    to{}
+} */

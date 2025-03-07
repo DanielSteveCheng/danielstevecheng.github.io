@@ -1,8 +1,9 @@
 window.addEventListener("load", setup)
 
 class Experience {
-    constructor(name, description) {
+    constructor(name, image, description) {
         this.name = name;
+        this.image = image;
         this.description = description;
     }
 }
@@ -11,13 +12,15 @@ async function setup() {
     let fileContents = await readExperiences();
 
     all_exp = createExpObjects(fileContents);
+    all_length = all_exp.length;
 
     retrieve_DOM_references();
     addEventListeners();
+    populateExp();
 }
 
 async function readExperiences() {
-    return await fetch(".static/imgs/experiences.txt")
+    return await fetch("static/resources/experiences.txt")
         .then(response => {
             return response.text();
         })
@@ -37,9 +40,11 @@ function createExpObjects(fileContents) {
                 console.log(expName);
             } else if (keyAndValue[0] == "description") {
                 description = keyAndValue[1];
+            } else if (keyAndValue[0] == "image") {
+                image = keyAndValue[1];
             }
         } else {
-            let exp = new Experience(expName, description);
+            let exp = new Experience(expName, image, description);
             expList.push(exp);
         }
     }
@@ -52,20 +57,116 @@ function createExpObjects(fileContents) {
 }
 
 function retrieve_DOM_references() {
-    pnc_ref = document.getElementById("PNC");
-    expItems = document.querySelectorAll(".exp")
-
+    // pnc_ref = document.getElementById("PNC");
+    // expItems = document.querySelectorAll(".exp");
+    leftItem = document.getElementById("left");
+    middleItem = document.getElementById("middle");
+    rightItem = document.getElementById("right");
 }
 
 function addEventListeners() {
     // pnc_ref.addEventListener("mouseover", () => addExp(pnc_ref));
     // pnc_ref.addEventListener("mouseout", () => removeExp(pnc_ref));
-    expItems.forEach((exp) => {
-        exp.addEventListener("mouseover", () => addExp(exp));
-        exp.addEventListener("mouseout", () => removeExp(exp));
-    });
+    // expItems.forEach((exp) => {
+    //     exp.addEventListener("mouseover", () => addExp(exp));
+    //     exp.addEventListener("mouseout", () => removeExp(exp));
+    // });
+
+    leftListener = leftItem.addEventListener("click", () => rotateToLeft());
+    rightListener = rightItem.addEventListener("click", () => rotateToRight());
 
 
+}
+
+function populateExp() {
+    console.log(all_exp);
+    let leftTitle = document.createElement("h1");
+    let middleTitle = document.createElement("h1");
+    let rightTitle = document.createElement("h1");
+
+    let leftImg = document.createElement("img");
+    let middleImg = document.createElement("img");
+    let rightImg = document.createElement("img");
+
+    let middleP = document.createElement("p");
+
+    leftTitle.id = "left_h1";
+    middleTitle.id = "middle_h1";
+    rightTitle.id = "right_h1";
+
+    leftImg.id = "left_img";
+    middleImg.id = "middle_img";
+    rightImg.id = "right_img";
+
+    middleP.id = "middle_p";
+
+    // leftItem.appendChild(leftImg);
+    // middleItem.appendChild(middleImg);
+    // rightItem.appendChild(rightImg);
+
+
+    leftItem.appendChild(leftTitle);
+    middleItem.appendChild(middleTitle);
+    rightItem.appendChild(rightTitle);
+
+    middleItem.appendChild(middleP);
+
+    populateLeft(all_exp[0]);
+    populateMiddle(all_exp[1]);
+    populateRight(all_exp[2]);
+    
+
+}
+
+function populateLeft(experience) {
+    let leftTitle = document.getElementById("left_h1");
+    leftTitle.innerHTML = experience.name + "<br> <";
+}
+
+function populateRight(experience) {
+    let rightTitle = document.getElementById("right_h1");
+    rightTitle.innerHTML = experience.name + "<br> >";
+}
+
+function populateMiddle(experience) {
+    let middleTitle = document.getElementById("middle_h1");
+    if (experience.image != "") {
+        middleTitle.innerHTML = experience.name + `<img src='${experience.image}' alt=''>`;
+    } else {
+        middleTitle.innerHTML = experience.name;
+    }
+
+    // let middleImg = document.getElementById("middle_img");
+    // middleImg.src = experience.image;
+
+    let middleP = document.getElementById("middle_p")
+    middleP.innerHTML = experience.description;
+    // console.log(middleP.innerText);
+}
+
+counter = 0
+
+function rotateToRight(){
+    console.log("All_length: " + all_length);
+    counter = (counter + 1) % (all_length);
+    console.log(counter);
+
+    populateLeft(all_exp[counter]);
+    populateMiddle(all_exp[(counter+1)%(all_length)]);
+    populateRight(all_exp[(counter+2)%(all_length)]);
+
+}
+
+function rotateToLeft(){
+    counter -= 1;
+    if (counter < 0) {
+        counter = all_length - 1;
+    }
+    console.log(counter);
+
+    populateLeft(all_exp[counter]);
+    populateMiddle(all_exp[(counter+1)%(all_length)]);
+    populateRight(all_exp[(counter+2)%(all_length)]);
 }
 
 function addExp(experience) {
@@ -103,28 +204,10 @@ const buttonRight = document.getElementById('slideRight');
 const buttonLeft = document.getElementById('slideLeft');
 
 buttonRight.onclick = function () {
-    var container = document.getElementById('scrollmenu');
-                scrollAmount = 0;
-                var slideTimer = setInterval(function(){
-                    container.scrollLeft += 30;
-                    scrollAmount += 10;
-                    if(scrollAmount >= 100){
-                        window.clearInterval(slideTimer);
-                    }
-                }, 25);
+    rotateToRight();
 };
 buttonLeft.onclick = function () {
-
-    var container = document.getElementById('scrollmenu');
-    scrollAmount = 0;
-    var slideTimer = setInterval(function(){
-        container.scrollLeft -= 30;
-        scrollAmount += 10;
-        if(scrollAmount >= 100){
-            window.clearInterval(slideTimer);
-        }
-    }, 25);
-            
+    rotateToLeft();
 };
 
 

@@ -1,8 +1,11 @@
-name:PNC
-description:This coming summer of 2025, I will be working as a technology intern at PNC Bank. I hope to work on a Software Engineering team to build internal/external software applications. <br><br> More details coming soon!
-
-name:SURR
+name:Surreality
+image:static/imgs/surreality.png
 description:Since January of 2025, I have worked as a Research Assistant at Surreality Labs, a lab dedicated to developing solutions in the medical space with cutting-edge spatial-computing, AI, and robotics. <br> Currently, I am working on developing an API for the Apple Vision Pro to detect and send the location data of barcodes to an external program.
 
-name:STIW
+name:PNC Intern
+image:static/imgs/pnc.png
+description:This coming summer of 2025, I will be working as a technology intern at PNC Bank. I hope to work on a Software Engineering team to build internal/external software applications. <br><br> More details coming soon!
+
+name:STIW Lab
+image:
 description:Starting in Spring of 2024, I worked with the STIW Lab led by Dr. Aakash Gautam, where we focus on dealing with issues of power inequity.<br><br>Accomplishments<br> • Co-designing learning plans focused on data literacy for middle school children with company No Code AI<br>• Co-authoring research publication on teaching structures to instruct children in data-literacy skills

@@ -1,4 +1,4 @@
-name:PNC
+name:PNCIntern
 description:This coming summer of 2025, I will be working as a technology intern at PNC Bank. I hope to work on a Software Engineering team to build internal/external software applications. <br><br> More details coming soon!
 
 name:SURR

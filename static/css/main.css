@@ -586,8 +586,7 @@ section{
     position: absolute;
     margin-top: 10vh;
     margin-left: 9vw;
-    width: 30vw;
-    /* height: 10vh; */
+    height: 10vh;
     animation-name: a1;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -597,8 +596,8 @@ section{
     position: absolute;
     margin-top: 15vh;
     margin-left: 12vw;
-    width: 30vw;
-    /* height: 10vh; */
+    /* width: 30vw; */
+    height: 10vh;
     animation-name: a2;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -608,8 +607,8 @@ section{
     position: absolute;
     margin-top: 20vh;
     margin-left: 15vw;
-    width: 30vw;
-    /* height: 10vh; */
+    width: 53vh;
+    height: 10vh;
     animation-name: a3;
     animation-duration: 7s;
     animation-iteration-count: infinite;

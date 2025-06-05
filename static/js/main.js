@@ -20,7 +20,7 @@ async function setup() {
 }
 
 async function readExperiences() {
-    return await fetch("static/resources/experiences.txt")
+    return await fetch("https://github.com/DanielSteveCheng/danielstevecheng.github.io/blob/main/static/resources/experiences.txt")
         .then(response => {
             return response.text();
         })

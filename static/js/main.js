@@ -31,7 +31,7 @@ async function readExperiences() {
 
 function createExpObjects(fileContents) {
     let expList = [];
-    let rawData = fileContents.split("\r\n");
+    let rawData = fileContents.split("\n");
     for (line of rawData) {
         if (line.trim()) {
             let keyAndValue = line.split(":");

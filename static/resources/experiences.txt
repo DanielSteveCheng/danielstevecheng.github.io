@@ -4,7 +4,7 @@ description:Since January of 2025, I have worked as a Research Assistant at Surr
 
 name:PNC Intern
 image:static/imgs/pnc.png
-description:This coming summer of 2025, I will be working as a technology intern at PNC Bank. I hope to work on a Software Engineering team to build internal/external software applications. <br><br> More details coming soon!
+description:This summer of 2025, I am working as a Technology Intern at PNC Bank on the Payment Transformations team. I am working on a new payment system that PNC is developing, and I am developing my skills in Java, MongoDB, and Kafka. I am currently involved with QA and testing and will be working on more projects soon!
 
 name:STIW Lab
 image:
@@ -12,7 +12,7 @@ description:Starting in Spring of 2024, I worked with the STIW Lab led by Dr. Aa
 
 name:SteelHacks
 image:
-description: This year, I have been excited to take on the role of Executive Director of SteelHacks, Pitt's largest annual hackathon. Currently, I am leading a team of 30+ members to host our event in Fall of 2025, and I am extremely hopeful for what we can bring to our event. <br><br> Last year, I was the Director of Outreach for SteelHacks, where I drew in over 600+ applications from 81 different universities.
+description: This year, I have been excited to take on the role of Executive Director of SteelHacks, Pitt's largest annual hackathon. Currently, I am leading a team of 30+ members to host our event in Fall of 2025, and I am extremely hopeful for what we can bring to our event. So far, we have raised over $30,000 and are in conversations with various companies. <br><br> Last year, I was the Director of Outreach for SteelHacks, where I drew in over 600+ applications from 81 different universities.
 
 name:Pitt Orchestra <br> Concertmaster
 image:
